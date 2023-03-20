@@ -51,7 +51,7 @@ import {
       icon: backend,
     },
     {
-      title: "Vuejs Developer",
+      title: "React Developer",
       icon: creator,
     },
   ];
