@@ -20,6 +20,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    innovativetoll
   } from "../assets";
   
   export const navLinks = [
@@ -47,11 +48,11 @@ import {
       icon: mobile,
     },
     {
-      title: "Laravel Developer",
+      title: "Mobile App Developer",
       icon: backend,
     },
     {
-      title: "React Developer",
+      title: "Frontend Developer",
       icon: creator,
     },
   ];
@@ -125,6 +126,21 @@ import {
         "Collaborated with product team members to implement new feature developments.",
         "Ensuring proper documentation and reports in all stages of product life cycles.",
         "Designed and implemented HTML email templates and newsletters for marketing campaigns.",
+      ],
+    },
+    {
+      title: "Full stack Developer",
+      company_name: "Innovative Toll Solutions",
+      icon: innovativetoll,
+      iconBg: "#FFFFFF",
+      date: "June 2023 - May 2025",
+      points: [
+        "Developed and managed the company's corporate website and multiple service-specific websites",
+        "Created and implemented a comprehensive ticketing system for customer support and issue tracking",
+        "Built a transponder management system for tracking and managing toll devices",
+        "Implemented responsive, mobile-first designs across all web platforms",
+        "Collaborated with cross-functional teams to integrate payment systems and user management",
+        "Maintained documentation throughout development lifecycle and provided training for system users",
       ],
     },
    
