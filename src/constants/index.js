@@ -4,22 +4,21 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
     jambopay,
-    carrent,
+    savoir,
     jobit,
     tripguide,
     threejs,
+    vue,
+    flutter,
     innovativetoll
   } from "../assets";
   
@@ -70,17 +69,18 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Vue",
+      icon: vue,
+    },
+    {
+      name: "Flutter",
+      icon: flutter,
     },
     {
       name: "Tailwind CSS",
@@ -102,10 +102,7 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
+
     {
       name: "docker",
       icon: docker,
@@ -175,25 +172,22 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Savoir",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based CMS platform for savoir faire company to manage their website and blog.",
       tags: [
         {
-          name: "react",
+          name: "vue",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "tailwind",
           color: "green-text-gradient",
         },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+       
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: savoir,
+      source_code_link: "https://savoir-faire-y2lq.vercel.app/",
     },
     {
       name: "Job IT",
