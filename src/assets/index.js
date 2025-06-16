@@ -3,7 +3,7 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
+import github from "./link.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -22,20 +22,29 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import flutter from "./tech/flutter.png";
 import vue from "./tech/vue.png";
-
+import graghql from "./tech/graghql.png"
+import nuxt from "./tech/nuxt.png"
+import gsap from "./tech/gsap.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import jambopay from "./company/jambopay.jpg";
+import wamara from "./company/wamara.jpg";
 import innovativetoll from "./company/innovativetoll.png";
+import shipit from "./shipit.png";
+import tich from "./tich.png";
+import yaani from "./yaani.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import savoir from "./savoir.png";
 
 export {
+  shipit,
+  tich,
+  yaani,
   logo,
   backend,
   creator,
@@ -68,5 +77,9 @@ export {
   tripguide,
   jambopay,
   savoir,
-  innovativetoll
+  innovativetoll,
+  graghql,
+  nuxt,
+  gsap,
+  wamara
 };

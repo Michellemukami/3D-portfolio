@@ -18,8 +18,14 @@ import {
     tripguide,
     threejs,
     vue,
-    flutter,
-    innovativetoll
+    gsap,
+    innovativetoll,
+    graghql,
+    nuxt,
+    wamara,
+    shipit,
+    tich,
+    yaani,
   } from "../assets";
   
   export const navLinks = [
@@ -43,11 +49,11 @@ import {
       icon: web,
     },
     {
-      title: "Fullstack Developer",
+      title: "Backend Developer",
       icon: mobile,
     },
     {
-      title: "Mobile App Developer",
+      title: "UI/UX Developer",
       icon: backend,
     },
     {
@@ -71,16 +77,16 @@ import {
     },
     
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "Nuxt",
+      icon: nuxt,
     },
     {
       name: "Vue",
       icon: vue,
     },
     {
-      name: "Flutter",
-      icon: flutter,
+      name: "GraghQl",
+      icon: graghql,
     },
     {
       name: "Tailwind CSS",
@@ -107,6 +113,10 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "GSAP",
+      icon: gsap,
+    },
   ];
   
   const experiences = [
@@ -117,27 +127,44 @@ import {
       iconBg: "#FFFFFF",
       date: "Nov 2019 - Jan 202",
       points: [
-        "Implemented website and landing pages from concept through development",
-        "Standardized all output with new, responsive, mobile first-approach and strategy.",
-        "Assessed UX and UI design for technical feasibility.",
-        "Collaborated with product team members to implement new feature developments.",
-        "Ensuring proper documentation and reports in all stages of product life cycles.",
-        "Designed and implemented HTML email templates and newsletters for marketing campaigns.",
+        "Designed and developed a real-time CRM platform enabling customers to raise utility-related issues directly with service providers.",
+        "Utilized Django as the backend framework, with WebSockets and Redis for real-time issue tracking and communication.",
+        "Employed PostgreSQL for robust data storage and management.",
+        "Integrated Chart.js for dynamic data visualization and performance insights.",
+        "Delivered a modern, responsive front-end using Bootstrap, HTML, CSS, and JavaScript.",
+        "•	Focused on user experience, performance, and scalability across the full application lifecycle.",
       ],
     },
+    
     {
       title: "Full stack Developer",
       company_name: "Innovative Toll Solutions",
       icon: innovativetoll,
       iconBg: "#FFFFFF",
-      date: "June 2023 - May 2025",
+      date: "June 2023 - June 2025",
       points: [
         "Developed and managed the company's corporate website and multiple service-specific websites",
-        "Created and implemented a comprehensive ticketing system for customer support and issue tracking",
-        "Built a transponder management system for tracking and managing toll devices",
-        "Implemented responsive, mobile-first designs across all web platforms",
-        "Collaborated with cross-functional teams to integrate payment systems and user management",
-        "Maintained documentation throughout development lifecycle and provided training for system users",
+        "Developed features for an asset management dashboard to simplify tracking and auditing of client assetsg",
+        "Implemented change logging with a full audit trail for transparency and compliance.",
+        "Enabled transponder ordering, replacement handling, and real-time order tracking.",
+        "Integrated inline editing within DataTables for fast, in-context data updates.",
+        "•	Built logic to detect and flag mismatched asset records across agency systems, enhancing data accuracy and resolution time.",
+      ],
+    },
+    {
+      title: "Lead Web Developer",
+      company_name: "Wamara Design Studio",
+      icon: wamara,
+      iconBg: "#FFFFFF",
+      date: "FreeLance - Remote",
+      points: [
+        "Developed cutting-edge time sensitive CMS websites for a diverse range of clients, handling everything from creation to ongoing maintenance and web hosting.",
+        "Leveraged modern technologies including Payload (Headless CMS), Nuxt.js, Tailwind CSS, HTML, CSS, and GSAP to deliver fast, responsive, and highly customizable web experiences.",
+        "Architected scalable content structures within Payload to allow flexible and intuitive content editing for non-technical users",
+        "Integrated smooth, on-scroll animations and transitions using GSAP for engaging, interactive front-end experiences.",
+        "Deployed websites with continuous monitoring and handled routine web hosting, DNS management, and SSL setup.",
+        "Collaborated with designers, marketers, and stakeholders to align website functionality with brand goals and campaign needs.",
+     
       ],
     },
    
@@ -172,17 +199,25 @@ import {
   
   const projects = [
     {
-      name: "Savoir",
+      name: "Savoir Faire",
       description:
-        "Web-based CMS platform for savoir faire company to manage their website and blog.",
+        "A custom-crafted web CMS for Savoir Faire, empowering seamless website and blog management with refined control and sophisticated design",
       tags: [
         {
           name: "vue",
           color: "blue-text-gradient",
         },
         {
+          name: "Nuxt",
+          color: "orange-text-gradient",
+        },
+        {
           name: "tailwind",
           color: "green-text-gradient",
+        },
+        {
+          name: "Payload",
+          color: "pink-text-gradient",
         },
        
       ],
@@ -190,46 +225,55 @@ import {
       source_code_link: "https://savoir-faire-y2lq.vercel.app/",
     },
     {
-      name: "Job IT",
+      name: "Shop We Ship",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A seamless cross-border shopping platform that lets users in Kenya purchase products from U.S. stores and have them shipped directly to their address.",
       tags: [
         {
-          name: "react",
+          name: "Nextjs",
           color: "blue-text-gradient",
         },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
+         {
+          name: "graphql",
           color: "pink-text-gradient",
         },
+         {
+          name: "NodeJs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "postgres",
+          color: "green-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: shipit,
+      source_code_link: "https://cargonexpress.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Yaani",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
+        "A tailored CMS solution for Yaani, built to effortlessly manage rich video content — all wrapped in a polished, animated, and user-friendly interface that brings content to life.",
+    tags: [
         {
-          name: "nextjs",
+          name: "vue",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Nuxt",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Payload",
           color: "pink-text-gradient",
         },
+       
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: yaani,
+      source_code_link: "https://www.yaani-creative.com/",
     },
   ];
   

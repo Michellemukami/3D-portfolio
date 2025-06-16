@@ -6,8 +6,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
-
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -23,12 +23,43 @@ const Contact = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault();
+     // Validate form
+  if (!form.name || !form.email || !form.message) {
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'warning',
+      title: 'Please fill in all fields.',
+      showConfirmButton: false,
+      timer: 3000,
+      background: '#151030',
+      color: '#fff',
+    });
+    return;
+  }
+
+  // Optional: Validate email format
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(form.email)) {
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'warning',
+      title: 'Please enter a valid email address.',
+      showConfirmButton: false,
+      timer: 3000,
+      background: '#151030',
+      color: '#fff',
+    });
+    return;
+  }
+
     setLoading(true);
 
  
     emailjs.send(
-      'service_rc79wxh',
-      'template_s9hv7gc',
+      'service_46ta8eo',
+      'template_q1hpkl9',
     {
       from_name: form.name,
       to_name:'Michelle Mukami',
@@ -40,7 +71,18 @@ const Contact = () => {
     )
     .then(()=> {
       setLoading(false);
-      alert('Thank you, I will get back to you as soon as possible');
+   
+  Swal.fire({
+    toast: true,
+    position: 'top-end',
+    icon: 'success',
+    title: 'Message sent!',
+    showConfirmButton: false,
+    timer: 3000,
+    background: '#151030',
+    color: '#fff',
+    iconColor: '#4ade80', // green icon
+  });
     setForm({
       name:'',
       email:'',
@@ -49,7 +91,17 @@ const Contact = () => {
     }, (error) => {
       setLoading(false)
       console.log(error),
-      alert('Something went wrong.')
+        Swal.fire({
+    toast: true,
+    position: 'top-end',
+    icon: 'error',
+    title: 'Something went wrong. Please try again.',
+    showConfirmButton: false,
+    timer: 3000,
+    background: '#151030',
+    color: '#ffffff'
+  });
+
     })
   }
   return (
