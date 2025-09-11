@@ -36,12 +36,14 @@ import innovativetoll from "./company/innovativetoll.png";
 import shipit from "./shipit.png";
 import tich from "./tich.png";
 import yaani from "./yaani.png";
+import baridi from "./baridi.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import savoir from "./savoir.png";
 
 export {
+  baridi,
   shipit,
   tich,
   yaani,

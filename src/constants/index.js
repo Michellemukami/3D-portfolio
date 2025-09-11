@@ -26,6 +26,7 @@ import {
     shipit,
     tich,
     yaani,
+    baridi,
   } from "../assets";
   
   export const navLinks = [
@@ -204,7 +205,7 @@ import {
         "A custom-crafted web CMS for Savoir Faire, empowering seamless website and blog management with refined control and sophisticated design",
       tags: [
         {
-          name: "vue",
+          name: "GSAP",
           color: "blue-text-gradient",
         },
         {
@@ -255,7 +256,7 @@ import {
         "A tailored CMS solution for Yaani, built to effortlessly manage rich video content — all wrapped in a polished, animated, and user-friendly interface that brings content to life.",
     tags: [
         {
-          name: "vue",
+          name: "GSAP",
           color: "blue-text-gradient",
         },
         {
@@ -274,6 +275,32 @@ import {
       ],
       image: yaani,
       source_code_link: "https://www.yaani-creative.com/",
+    },
+      {
+      name: "Baridi",
+      description:
+        "A purpose-built digital platform for Baridi, designed to showcase and manage its solar-powered cold storage solutions. With a clean, modern interface and smooth animations, it highlights Baridi’s impact while making content management effortless and user-friendly.",
+    tags: [
+        {
+          name: "GSAP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Nuxt",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Payload",
+          color: "pink-text-gradient",
+        },
+       
+      ],
+      image: baridi,
+      source_code_link: "https://baridi.co.ke/",
     },
   ];
   
