@@ -6,6 +6,49 @@ import { logo, menu, close } from '../assets'
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  
+  // Enhanced scroll function with section-specific offsets for precise positioning
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // Get the navbar height
+      const navbarHeight = document.querySelector('nav').offsetHeight;
+      
+      // Use different offsets for different sections
+      let additionalOffset = 0;
+      
+      // Customize offset based on section ID
+      switch(id) {
+        case 'about':
+          additionalOffset = 100;
+          break;
+        case 'work':
+          additionalOffset = 80;
+          break;
+        case 'contact':
+          additionalOffset = 60;
+          break;
+        case 'projects':
+          additionalOffset = 90;
+          break;
+        case 'feedbacks':
+          additionalOffset = 70;
+          break;
+        default:
+          additionalOffset = 50;
+      }
+      
+      // Calculate position with window.scrollY for more accurate positioning
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navbarHeight - additionalOffset;
+      
+      // Scroll with smooth behavior
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <nav
       className={
@@ -34,7 +77,11 @@ const Navbar = () => {
                 ? "text-white"
                 : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(Link.title)}>
+              onClick={(e) => {
+                e.preventDefault();
+                setActive(Link.title);
+                scrollToSection(Link.id);
+              }}>
 
                 <a href={`#${Link.id}`}>{Link.title}</a>
               </li>
@@ -55,9 +102,12 @@ const Navbar = () => {
                 ? "text-white"
                 : "text-secondary"
               } font-poppins font-medium cursor-pointer text-[16px]`}
-              onClick={() => {
-                setActive(Link.title)
-                setToggle(!toggle)}}>
+              onClick={(e) => {
+                e.preventDefault();
+                setActive(Link.title);
+                setToggle(!toggle);
+                scrollToSection(Link.id);
+              }}>
 
                 <a href={`#${Link.id}`}>{Link.title}</a>
               </li>

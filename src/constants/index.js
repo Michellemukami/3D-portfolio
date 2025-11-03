@@ -27,6 +27,8 @@ import {
     tich,
     yaani,
     baridi,
+    kwal,                                                                         
+    maranga,
   } from "../assets";
   
   export const navLinks = [
@@ -250,6 +252,7 @@ import {
       image: shipit,
       source_code_link: "https://cargonexpress.com/",
     },
+    
     {
       name: "Yaani",
       description:
@@ -301,6 +304,62 @@ import {
       ],
       image: baridi,
       source_code_link: "https://baridi.co.ke/",
+    },
+          {
+      name: "Maranga Nyangu'te Advocates",
+      description:
+        "A custom-crafted web CMS for Maranga Nyangu'te Advocates, empowering seamless website with refined control and sophisticated design.",
+    tags: [
+        {
+          name: "GSAP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Nuxt",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "TypeScript",
+          color: "pink-text-gradient",
+        },
+       
+      ],
+      image: maranga,
+      source_code_link: "https://www.maranganyanguteadvocates.com/",
+    },
+           {
+      name: "Kwal Prototype",
+      description:
+        "A custom-crafted web CMS for KWAL, a prototype website concept showcasing refined control and sophisticated design.",
+    tags: [
+        {
+          name: "GSAP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Nuxt",
+          color: "orange-text-gradient",
+        },
+          {
+          name: "Payload",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "TypeScript",
+          color: "pink-text-gradient",
+        },
+       
+      ],
+      image: kwal,
+      source_code_link: "https://kwal-demo-rho.vercel.app/",
     },
   ];
   

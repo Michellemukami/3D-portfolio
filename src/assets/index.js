@@ -35,6 +35,8 @@ import wamara from "./company/wamara.jpg";
 import innovativetoll from "./company/innovativetoll.png";
 import shipit from "./shipit.png";
 import tich from "./tich.png";
+import kwal from "./kwal.png";
+import maranga from "./maranga.png";
 import yaani from "./yaani.png";
 import baridi from "./baridi.png";
 import carrent from "./carrent.png";
@@ -44,6 +46,8 @@ import savoir from "./savoir.png";
 
 export {
   baridi,
+  kwal,
+  maranga,
   shipit,
   tich,
   yaani,
